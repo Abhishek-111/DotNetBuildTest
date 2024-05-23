@@ -23,5 +23,13 @@ namespace BasicDotNetProject.Controllers
         {
             return Ok(new { message = id });
         }
+
+        [HttpPost]
+        [Route("method3")]
+        public IActionResult Method3(string name)
+        {
+            return Ok(new {message = name });
+        }
     }
+        
 }
