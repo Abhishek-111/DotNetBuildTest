@@ -30,6 +30,13 @@ namespace BasicDotNetProject.Controllers
         {
             return Ok(new {message = name });
         }
+
+        [HttpDelete]
+        [Route("method4/{id}")]
+        public IActionResult Method4([FromRoute] int id)
+        {
+            return BadRequest(new { message = "Deleted" });
+        }
     }
         
 }

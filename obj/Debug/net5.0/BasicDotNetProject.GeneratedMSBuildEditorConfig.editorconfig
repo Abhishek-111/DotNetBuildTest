@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = BasicDotNetProject
-build_property.ProjectDir = C:\Users\abhishekkumar26\OneDrive - Nagarro\Documents\MVC\BasicDotNet_Jenkins\BasicDotNetProject\
+build_property.ProjectDir = E:\Git_Practice\DotNetBuildTest\
