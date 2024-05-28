@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using BasicDotNetProject.Dtos;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -37,6 +38,23 @@ namespace BasicDotNetProject.Controllers
         {
             return BadRequest(new { message = "Deleted" });
         }
+
+        /// <summary>
+        /// method to return the code
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("/getperson")]
+        public IActionResult PersonDetails()
+        {
+            var person = new PersonDTO()
+            {
+                Id = 1,
+                Name = "Raman",
+                
+            };
+            return Ok(new { message = PersonDTO.Code });
+        }
+        
     }
         
 }
