@@ -49,7 +49,8 @@ namespace BasicDotNetProject.Controllers
             var person = new PersonDTO()
             {
                 Id = 1,
-                Name = "Raman",
+                //Name = "Raman",
+                Name = "Pappu",
                 
             };
             return Ok(new { message = PersonDTO.Code });
