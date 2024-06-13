@@ -54,7 +54,24 @@ namespace BasicDotNetProject.Controllers
             };
             return Ok(new { message = PersonDTO.Code });
         }
-        
+
+
+        // <summary>
+        /// method to demonstrate conflicts
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("/conflicts")]
+        public IActionResult ForConflicts()
+        {
+            var person = new PersonDTO()
+            {
+                Id = 1,
+                Name = "Raman",
+
+            };
+            return Ok(new { message="Ok Conflicts" });
+        }
+
     }
         
 }
